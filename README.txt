@@ -1,6 +1,9 @@
-SIGNACE PREMIUM WEBSITE V2
+SIGNACE CINEMATIC WEBSITE — V3
 
-Open index.html to preview.
-Upload the contents of this folder (not the folder itself) to GitHub Pages, Netlify or your web host.
+UPLOAD TO GITHUB PAGES
+1. Upload index.html, styles.css, main.js and the entire assets folder.
+2. Keep the folder named exactly "assets".
+3. In GitHub: Settings > Pages > Deploy from branch > main / root.
+4. Wait 1–3 minutes, then refresh the site.
 
-The enquiry form opens the visitor's email app and addresses the message to info@signace.com.au.
+This build is mobile responsive and uses the supplied Signace project photography.

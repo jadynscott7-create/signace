@@ -1,1 +1,11 @@
-window.addEventListener('load',()=>{document.body.classList.add('loaded')});const header=document.querySelector('.header');window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30));const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));document.querySelector('.menu').addEventListener('click',()=>document.querySelector('.header nav').classList.toggle('open'));document.querySelectorAll('.header nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.header nav').classList.remove('open')));document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const body=`Name: ${f.get('name')}%0ACompany: ${f.get('company')}%0AEmail: ${f.get('email')}%0APhone: ${f.get('phone')}%0A%0AProject details:%0A${encodeURIComponent(f.get('message'))}`;location.href=`mailto:info@signace.com.au?subject=New website enquiry from ${encodeURIComponent(f.get('name'))}&body=${body}`});
+
+const loader=document.getElementById('loader');
+window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('hide'),450));
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const menuBtn=document.getElementById('menuBtn'),menu=document.getElementById('mobileMenu');
+menuBtn.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();

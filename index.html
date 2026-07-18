@@ -1,80 +1,156 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#06080c">
-<meta name="description" content="Signace manufactures and installs premium national sport, retail, commercial and fleet signage Australia-wide.">
-<title>Signace — National Signage, Built to Be Seen</title>
-<link rel="preload" href="assets/images/hero.webp" as="image">
-<link rel="stylesheet" href="assets/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#05070a">
+  <meta name="description" content="Signace manufactures and installs premium signage, national sports branding, retail rollouts and environmental graphics across Australia.">
+  <title>Signace — National Signage, Delivered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="loader"><img src="assets/logo-white.png" alt=""><span></span></div>
-<header class="header">
-  <a class="logo" href="#top"><img src="assets/logo-white.png" alt="Signace"></a>
-  <nav><a href="#work">Work</a><a href="#services">Capabilities</a><a href="#about">About</a><a class="pill" href="#contact">Start a project</a></nav>
-  <button class="menu" aria-label="Open menu"><i></i><i></i></button>
-</header>
-<main id="top">
-<section class="hero">
-  <div class="hero-bg"></div><div class="hero-film"></div>
-  <div class="hero-copy">
-    <p class="kicker">Manufactured in Western Sydney · Installed Australia-wide</p>
-    <h1>Built to be<br><span>seen.</span></h1>
-    <p class="lede">National sport, retail rollouts and commercial environments—designed, manufactured and delivered by one team.</p>
-    <div class="actions"><a class="btn" href="#work">View selected work</a><a class="arrow" href="#contact">Discuss a project ↗</a></div>
+  <div class="loader" id="loader">
+    <div class="loader-mark">SIGN<span>ACE</span></div>
+    <div class="loader-line"><i></i></div>
   </div>
-  <div class="hero-badge"><b>30+</b><span>years delivering<br>signage at scale</span></div>
-  <div class="scroll">SCROLL <i></i></div>
-</section>
-<section class="intro wrap reveal">
-  <p class="eyebrow">SIGNAGE AT SCALE</p>
-  <h2>From championship arenas to national retail networks, we build the environments brands are remembered for.</h2>
-  <div class="metrics"><div><b>Australia-wide</b><span>coordinated delivery</span></div><div><b>In-house</b><span>print & manufacturing</span></div><div><b>End-to-end</b><span>project accountability</span></div></div>
-</section>
-<section id="work" class="work">
-  <article class="feature reveal"><img src="assets/images/netball.webp" alt="Netball grand final venue branding"><div class="shade"></div><div class="caption"><span>01 / NATIONAL SPORT</span><h3>Built for the biggest moments.</h3><p>Courts, stadia, change rooms, sponsor branding and event environments delivered against immovable deadlines.</p></div></article>
-  <div class="project-grid wrap">
-    <article class="card portrait reveal"><img src="assets/images/wanderers.webp" alt="Western Sydney Wanderers activation"><div><span>Western Sydney Wanderers</span><h3>Matchday experience</h3></div></article>
-    <article class="card reveal"><img src="assets/images/tigers_history.webp" alt="Wests Tigers history wall"><div><span>Wests Tigers</span><h3>Club heritage environment</h3></div></article>
-    <article class="card reveal"><img src="assets/images/locker.webp" alt="Professional sports locker room graphics"><div><span>Professional sport</span><h3>Player spaces transformed</h3></div></article>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Signace home">
+      <span>signace</span><small>.com.au</small>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="desktop-nav">
+      <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Start a project</a>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work">Work</a><a href="#capabilities">Capabilities</a><a href="#about">About</a><a href="#contact">Start a project</a>
   </div>
-  <section class="split wrap reveal"><div class="split-copy"><p class="eyebrow">02 / NATIONAL ROLLOUTS</p><h2>One brand.<br>Every location.</h2><p>Survey, production, logistics and installation coordinated across metro and regional Australia—without compromising consistency.</p><a class="arrow dark" href="#contact">Plan a rollout ↗</a></div><div class="split-img"><img src="assets/images/oznight.webp" alt="OZ Design illuminated signage at night"></div></section>
-  <div class="mosaic wrap">
-    <article class="card wide reveal"><img src="assets/images/bottleo.webp" alt="Bottle-O signage rollout"><div><span>Retail rollout</span><h3>The Bottle-O</h3></div></article>
-    <article class="card reveal"><img src="assets/images/cellar.webp" alt="Cellarbrations retail signage"><div><span>Retail network</span><h3>Cellarbrations</h3></div></article>
-    <article class="card reveal"><img src="assets/images/fresh.webp" alt="Retail interior signage"><div><span>Retail interiors</span><h3>Integrated wayfinding</h3></div></article>
-  </div>
-  <article class="feature reveal"><img src="assets/images/surevision.webp" alt="SureVision office graphics"><div class="shade"></div><div class="caption"><span>03 / ENVIRONMENTAL GRAPHICS</span><h3>Turn space into identity.</h3><p>Feature walls, dimensional branding and interior graphics designed to change how a workplace or venue feels.</p></div></article>
-  <div class="project-grid wrap">
-    <article class="card reveal"><img src="assets/images/restrooms.webp" alt="Premium restroom wayfinding"><div><span>Architectural signage</span><h3>Wayfinding, elevated</h3></div></article>
-    <article class="card portrait reveal"><img src="assets/images/pylon.webp" alt="Pylon branding installation"><div><span>High-access installation</span><h3>Complex sites, controlled delivery</h3></div></article>
-    <article class="card reveal"><img src="assets/images/fleet.webp" alt="Fleet vehicle graphics"><div><span>Fleet branding</span><h3>Visibility in motion</h3></div></article>
-  </div>
-</section>
-<section id="services" class="services wrap">
-  <div class="services-head reveal"><p class="eyebrow">CAPABILITIES</p><h2>Made here.<br>Delivered everywhere.</h2></div>
-  <div class="service-list">
-    <div class="service reveal"><span>01</span><h3>National sport & events</h3><p>Venue branding, field-of-play graphics, change rooms, activations and sponsor environments.</p></div>
-    <div class="service reveal"><span>02</span><h3>Retail & rollout programs</h3><p>Multi-site surveys, manufacturing, illuminated façades, logistics and coordinated national installation.</p></div>
-    <div class="service reveal"><span>03</span><h3>Commercial & architectural</h3><p>Built-up letters, lightboxes, pylons, façades, wayfinding and custom fabricated signage.</p></div>
-    <div class="service reveal"><span>04</span><h3>Large-format & environmental</h3><p>Wall, window and floor graphics, banners, displays and high-impact printed environments.</p></div>
-    <div class="service reveal"><span>05</span><h3>Fleet & vehicle branding</h3><p>Single vehicles through to national fleets with durable finishes and strict brand consistency.</p></div>
-    <div class="service reveal"><span>06</span><h3>Installation & project delivery</h3><p>Experienced crews, high-access capability and one accountable partner from brief to handover.</p></div>
-  </div>
-</section>
-<section class="marquee"><div>DESIGN · PRINT · FABRICATE · INSTALL · DESIGN · PRINT · FABRICATE · INSTALL ·</div></section>
-<section id="about" class="about wrap">
-  <div class="about-text reveal"><p class="eyebrow">ABOUT SIGNACE</p><h2>National capability.<br>Personal accountability.</h2><p>Signace is a full-service signage manufacturer based in Western Sydney. We bring design support, wide-format print, fabrication, finishing, project management and installation together under one roof.</p><p>That means fewer handovers, tighter quality control and a team that stays responsible until the final sign is live.</p></div>
-  <div class="about-stack reveal"><img src="assets/images/fab.webp" alt="Signace installation team"><img src="assets/images/elitewall.webp" alt="Large format environmental graphics"></div>
-</section>
-<section id="contact" class="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-copy reveal"><p class="eyebrow">START A PROJECT</p><h2>Bring us the brief.<br><span>We’ll make it visible.</span></h2><p>Tell us what you are building, where it is going and when it needs to be live.</p><div class="contact-links"><a href="tel:+61247325825">(02) 4732 5825</a><a href="mailto:info@signace.com.au">info@signace.com.au</a><span>Penrith, NSW · Australia-wide</span></div></div>
-    <form id="form" class="reveal"><label>Name<input name="name" required></label><label>Company<input name="company"></label><label>Email<input name="email" type="email" required></label><label>Phone<input name="phone"></label><label class="full">Project details<textarea name="message" rows="4" required></textarea></label><button class="btn" type="submit">Send enquiry ↗</button></form>
-  </div>
-</section>
-</main>
-<footer class="wrap"><img src="assets/logo-white.png" alt="Signace"><p>National signage, manufactured and installed Australia-wide.</p><span>© <b id="year"></b> Signace</span></footer>
-<script src="assets/main.js"></script>
-</body></html>
+
+  <main id="top">
+    <section class="hero">
+      <img src="assets/hero.webp" alt="Championship event branding delivered by Signace">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Manufactured in Sydney. Delivered Australia-wide.</p>
+        <h1 class="reveal">SIGNAGE<br><span>SEEN BY MILLIONS.</span></h1>
+        <div class="hero-bottom reveal">
+          <p>National sport. Retail rollouts. Architectural signage. One team from manufacture to installation.</p>
+          <a href="#work" class="round-link" aria-label="View our work">↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <p class="eyebrow reveal">What we do</p>
+      <h2 class="reveal">We build the environments where brands become <em>unmissable.</em></h2>
+      <div class="stats reveal">
+        <div><strong>30+</strong><span>Years of experience</span></div>
+        <div><strong>AU</strong><span>National delivery</span></div>
+        <div><strong>01</strong><span>End-to-end team</span></div>
+      </div>
+    </section>
+
+    <section id="work" class="projects">
+      <article class="project project-wide reveal">
+        <img src="assets/sports_netball.webp" alt="Netball Australia grand final branding">
+        <div class="project-copy">
+          <span>01 / National Sport</span>
+          <h3>Built for the biggest moments.</h3>
+          <p>Full-venue branding, court surrounds, presentation environments and fast-turnaround event delivery.</p>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project reveal">
+          <img src="assets/sports_wanderers.webp" alt="Western Sydney Wanderers walkout experience">
+          <div class="project-copy"><span>Western Sydney Wanderers</span><h3>Match-day environments</h3></div>
+        </article>
+        <article class="project reveal">
+          <img src="assets/sports_tigers.webp" alt="Wests Tigers locker room branding">
+          <div class="project-copy"><span>Wests Tigers</span><h3>Club & player facilities</h3></div>
+        </article>
+      </div>
+
+      <article class="project project-split reveal">
+        <div class="split-copy">
+          <p class="eyebrow">Retail rollouts</p>
+          <h3>One brand.<br>Every location.</h3>
+          <p>Consistent manufacture and installation across metropolitan and regional Australia.</p>
+        </div>
+        <img src="assets/retail_oz.webp" alt="Illuminated OZ Design signage">
+      </article>
+
+      <div class="project-grid project-grid-3">
+        <article class="project reveal"><img src="assets/retail_bottleo.webp" alt="Bottle-O retail signage"><div class="project-copy"><span>The Bottle-O</span><h3>National retail</h3></div></article>
+        <article class="project reveal"><img src="assets/retail_cellar.webp" alt="Cellarbrations retail signage"><div class="project-copy"><span>Cellarbrations</span><h3>Network rollout</h3></div></article>
+        <article class="project reveal"><img src="assets/wayfinding.webp" alt="Architectural illuminated wayfinding"><div class="project-copy"><span>Architectural</span><h3>Wayfinding</h3></div></article>
+      </div>
+
+      <article class="project project-wide reveal">
+        <img src="assets/interior_surevision.webp" alt="SureVision corporate environmental graphics">
+        <div class="project-copy">
+          <span>Corporate Interiors</span>
+          <h3>Turn walls into experiences.</h3>
+          <p>Large-format graphics and dimensional branding built to transform the workplace.</p>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project reveal"><img src="assets/fleet.webp" alt="Elite Sand and Soil fleet graphics"><div class="project-copy"><span>Fleet branding</span><h3>Moving media</h3></div></article>
+        <article class="project reveal"><img src="assets/install.webp" alt="High access pylon installation"><div class="project-copy"><span>National installation</span><h3>Any scale</h3></div></article>
+      </div>
+    </section>
+
+    <section id="capabilities" class="capabilities">
+      <div class="cap-intro reveal">
+        <p class="eyebrow">Capabilities</p>
+        <h2>From first drawing<br>to final fixing.</h2>
+      </div>
+      <div class="cap-list">
+        <div class="cap-item reveal"><span>01</span><h3>Wide format print</h3><p>High-volume latex and flatbed output for permanent and event applications.</p></div>
+        <div class="cap-item reveal"><span>02</span><h3>Fabrication</h3><p>Custom illuminated letters, lightboxes, pylons and architectural structures.</p></div>
+        <div class="cap-item reveal"><span>03</span><h3>Environmental graphics</h3><p>Wall wraps, change rooms, venue branding and immersive branded spaces.</p></div>
+        <div class="cap-item reveal"><span>04</span><h3>National installation</h3><p>Coordinated site delivery, access equipment and rollout management Australia-wide.</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <img src="assets/wall.webp" alt="Large scale Signace wall graphics">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Signace</p>
+        <h2>Not just signs.<br>Brand presence.</h2>
+        <p>Signace partners with sporting organisations, national retailers and commercial brands to manufacture and install signage at scale. Our work is produced in-house and delivered by people who understand deadlines, venues and detail.</p>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div>SPORT&nbsp;—&nbsp;RETAIL&nbsp;—&nbsp;CORPORATE&nbsp;—&nbsp;FLEET&nbsp;—&nbsp;EVENTS&nbsp;—&nbsp;SIGNACE&nbsp;—&nbsp;</div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Start a project</p>
+        <h2>Make your brand<br><span>impossible to miss.</span></h2>
+      </div>
+      <div class="contact-actions reveal">
+        <a href="mailto:info@signace.com.au">info@signace.com.au ↗</a>
+        <a href="tel:1300230090">1300 230 090 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">signace<small>.com.au</small></div>
+    <p>Manufactured in Sydney. Installed Australia-wide.</p>
+    <p>© <span id="year"></span> Signace</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
