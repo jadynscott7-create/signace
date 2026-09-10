@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Us — Signace</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.contact-page{min-height:100vh;background:#090b0f;color:#fff;padding:140px 6vw 90px}
+.contact-wrap{max-width:1180px;margin:auto}
+.contact-page .eyebrow{color:#aaa;text-transform:uppercase;letter-spacing:.14em;font-size:12px}
+.contact-page h1{font-size:clamp(56px,9vw,125px);line-height:.88;letter-spacing:-.06em;margin:20px 0 28px}
+.contact-page h1 span{color:#aaa}
+.contact-page .lead{max-width:650px;color:#bbb;font-size:20px;line-height:1.55;margin-bottom:55px}
+.contact-form{max-width:850px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-form label{display:flex;flex-direction:column;gap:9px;color:#aaa;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.contact-form input,.contact-form textarea{font:inherit;color:#fff;background:#12151a;border:1px solid #343840;padding:18px;border-radius:2px;outline:none}
+.contact-form textarea{min-height:170px;resize:vertical}
+.contact-form .full{grid-column:1/-1}
+.contact-form button{border:0;background:#fff;color:#050609;padding:18px 28px;font-weight:800;font-size:15px;cursor:pointer}
+.back{display:inline-block;color:#fff;text-decoration:none;margin-bottom:50px}
+@media(max-width:700px){.contact-page{padding:110px 5vw 60px}.contact-form{grid-template-columns:1fr}.contact-form .full{grid-column:auto}.contact-page h1{font-size:clamp(54px,16vw,85px)}}
+</style>
+</head>
+<body>
+<main class="contact-page">
+<div class="contact-wrap">
+<a class="back" href="index.html">← Back to Signace</a>
+<p class="eyebrow">Contact Us</p>
+<h1>Looking to improve<br><span>your business?</span></h1>
+<p class="lead">Tell us what you're looking to achieve. From signage and wall graphics to fleet branding, retail fit-outs, illuminated signage and major event work — we can manufacture it and install it.</p>
+<form class="contact-form" action="https://formsubmit.co/info@signace.com.au" method="POST">
+<input type="hidden" name="_subject" value="New Signace website enquiry">
+<input type="hidden" name="_captcha" value="false">
+<label>Name<input name="name" required></label>
+<label>Company<input name="company"></label>
+<label>Email<input type="email" name="email" required></label>
+<label>Phone<input type="tel" name="phone"></label>
+<label class="full">What do you need?<input name="project"></label>
+<label class="full">Project details<textarea name="message" required></textarea></label>
+<button class="full" type="submit">Send Enquiry →</button>
+</form>
+</div>
+</main>
+</body>
+</html>
